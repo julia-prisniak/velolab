@@ -1,0 +1,35 @@
+.first-page {
+    width: 1440px;
+    background: #000000;
+    &--cover {
+        position: relative;
+        width: 1140px;
+        margin: 0 auto;
+        &__header {
+            font-family: Raleway;
+            font-size: 42px;
+            line-height: 64px;
+            color: #ffffff;
+        }
+        &__par {
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 28px;
+            color: #ffffff;
+        }
+        &__btn {
+            width: 340px;
+            height: 60px;
+            background: linear-gradient(81.51deg, #fc7a4b 7.36%, #cf0054 49.57%, #790054 93.51%);
+            border-radius: 30px;
+            font-family: Raleway;
+            font-size: 18px;
+            line-height: 28px;
+            color: #ffffff;
+        }
+        &__picture {
+            position: absolute;
+            size: 100%;
+        }
+    }
+}

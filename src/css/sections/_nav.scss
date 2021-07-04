@@ -1,0 +1,19 @@
+.navigation {
+    width: 1440px;
+    position: relative;
+    &--logo {
+        position: absolute;
+    }
+    &--menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        &__nav {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: Raleway;
+            font-size: 18px;
+        }
+    }
+}
