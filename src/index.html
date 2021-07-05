@@ -12,123 +12,133 @@
 
 <body>
     <div class="navigation">
-        <img src="./img/svg/logo.svg" alt="logo" class="navigation--logo">
-        <nav class="navigation--menu">
-            <a href="#" class="first-page--menu__nav">О нас</a>
-            <a href="#" class="first-page--menu__nav">Услуги </a>
-            <a href="#" class="first-page--menu__nav">Пакеты обслуживания</a>
-            <a href="#" class="first-page--menu__nav">Цены</a>
-            <a href="#" class="first-page--menu__nav">Вопросы и ответы</a>
-            <a href="#" class="first-page--menu__nav">Контакты</a>
-        </nav>
+        <div class="navigation__cover">
+            <img src="./img/svg/logo.svg" alt="logo" class="navigation__cover--logo">
+            <nav class="navigation__menu">
+                <a href="#" class="navigation__menu--nav">О нас</a>
+                <a href="#" class="navigation__menu--nav">Услуги </a>
+                <a href="#" class="navigation__menu--nav">Пакеты обслуживания</a>
+                <a href="#" class="navigation__menu--nav">Цены</a>
+                <a href="#" class="navigation__menu--nav">Вопросы и ответы</a>
+                <a href="#" class="navigation__menu--nav">Контакты</a>
+            </nav>
+        </div>
     </div>
     <section class="first-page">
-        <div class="first-page--cover">
-            <h1 class="first-page--cover__header">Делаем езду на велосипеде легкой, удобной и безопасной </h1>
-            <p class="first-page--cover__par">Веломастерская VeloLab — лучший помощник в сборке, настройке и ремонте
-                велосипедов в Киеве. Принимаемся за работы всех уровней сложности!</p>
-            <a href="#" class="first-page--cover__btn">Получить консультацию</a>
-            <img src="./img/fp_bike.png" alt="bike" class="first-page--cover__picture">
+        <div class="first-page__cover">
+            <div class="first-page__desc">
+                <h1 class="first-page__desc--header">Делаем езду на велосипеде легкой, удобной и безопасной </h1>
+                <p class="first-page__desc--par">Веломастерская VeloLab — лучший помощник в сборке, настройке и ремонте
+                    велосипедов в Киеве. Принимаемся за работы всех уровней сложности!</p>
+                <a href="#" class="first-page__desc--btn">Получить консультацию</a>
+            </div>
+            <img src="./img/fp_bike.png" alt="bike" class="first-page__cover--picture">
         </div>
     </section>
     <section class="about-us">
-        <div class="about-us--cover">
-            <h2 class="about-us--cover__header">Познакомимся?</h2>
-            <p class="about-us--cover__par">Наша мастерская находится в Киеве и оказывает широкий спектр услуг по
-                обслуживанию
-                велосипедов по доступным ценам</p>
-            <a href="#" class="about-us--cover__services">Услуги</a>
-            <a href="#" class="about-us--cover__prices">Цены</a>
-            <div class="about-us--quality">
-                <img src="./img/svg/diamond.svg" alt="diamond" class="about-us--quality__diamond">
-                <p class="about-us--quality__par">Мы верим, что качество залог доверия</p>
+        <div class="about-us__cover">
+            <div class="about-us__disc">
+                <h2 class="about-us__disc--header">Познакомимся?</h2>
+                <p class="about-us__disc--par">Наша мастерская находится в Киеве и оказывает широкий спектр услуг по
+                    обслуживанию
+                    велосипедов по доступным ценам</p>
+                <div class="about-us__disc--links">
+                    <a href="#" class="about-us__disc--link">Услуги</a>
+                    <a href="#" class="about-us__disc--link">Цены</a>
+                </div>
             </div>
-            <div class="about-us--value">
-                <img src="./img/svg/pig.svg" alt="pig" class="about-us--value__pig">
-                <p class="about-us--value__pig">Знаем, что цены должны быть справделивыми</p>
+            <div class="about-us__blocks">
+                <div class="about-us__blocks--item">
+                    <img src="./img/svg/diamond.svg" alt="diamond" class="about-us__blocks--pic">
+                    <p class="about-us__blocks--par">Мы верим, что качество залог доверия</p>
+                </div>
+                <div class="about-us__blocks--item">
+                    <img src="./img/svg/pig.svg" alt="pig" class="about-us__blocks--pic">
+                    <p class="about-us__blocks--par">Знаем, что цены должны быть справделивыми</p>
+                </div>
+                <div class="about-us__blocks--item">
+                    <img src="./img/svg/trust.svg" alt="heart" class="about-us__blocks--pic">
+                    <p class="about-us__blocks--par">Довольный клиент всегда наш первый приоритет</p>
+                </div>
             </div>
-            <div class="about-us--trust">
-                <img src="./img/svg/trust.svg" alt="heart" class="about-us--trust__heart">
-                <p class="about-us--trust__herat">Довольный клиент всегда наш первый приоритет</p>
-            </div>
-            <img src="./img/Group.png" alt="wave" class="about-us--cover__wave">
+            <img src="./img/Group.png" alt="wave" class="about-us__cover--wave">
         </div>
     </section>
     <section class="our-services">
-        <div class="our-services--cover">
-            <h2 class="our-services--header">Наши услуги</h2>
-            <div class="our-services--fd">
-                <h3 class="our-services--fd__header">Бесплатная диагностика</h3>
-                <p class="our-services--fd__par">Первичный осмотр с выявлением неисправностей</p>
-                <img src="./img/svg/fd.svg" alt="picture" class="our-services--fd__picture">
+        <div class="our-services__cover">
+            <h2 class="our-services__header">Наши услуги</h2>
+            <div class="our-services__fd">
+                <h3 class="our-services__fd--header">Бесплатная диагностика</h3>
+                <p class="our-services__fd--par">Первичный осмотр с выявлением неисправностей</p>
+                <img src="./img/svg/fd.svg" alt="picture" class="our-services__fd--picture">
             </div>
-            <div class="our-services--quality">
-                <h3 class="our-services--quality__header">Качество</h3>
-                <p class="our-services--quality__par">Мы работаем только лицензионными вело запчастями, а так же
+            <div class="our-services__quality">
+                <h3 class="our-services__quality--header">Качество</h3>
+                <p class="our-services__quality--par">Мы работаем только лицензионными вело запчастями, а так же
                     используем только качественные смазочные материалы</p>
-                <img src="./img/svg/quality.svg" alt="picture" class="our-services--quality__picture">
+                <img src="./img/svg/quality.svg" alt="picture" class="our-services__quality--picture">
             </div>
-            <div class="our-services--aap">
-                <h3 class="our-services--aap__header">Сборка и покраска</h3>
-                <p class="our-services--aap__par">Модернизация и реконструкция велосипедов, сборка велосипедов на заказ,
+            <div class="our-services__aap">
+                <h3 class="our-services__aap--header">Сборка и покраска</h3>
+                <p class="our-services__aap--par">Модернизация и реконструкция велосипедов, сборка велосипедов на заказ,
                     покраска велосипеда и его частей, разработка индивидуального стиля</p>
-                <img src="./img/svg/aap.svg" alt="picture" class="our-services--aap__picture">
+                <img src="./img/svg/aap.svg" alt="picture" class="our-services__aap--picture">
             </div>
-            <div class="our-services--construction">
-                <h3 class="our-services--construction__header">Конструирование</h3>
-                <p class="our-services--construction__par">Конструирование, изготовление, нетрадиционной велотехники</p>
-                <img src="./img/svg/construction.svg" alt="picture" class="our-services--construction__picture">
+            <div class="our-services__construction">
+                <h3 class="our-services__construction--header">Конструирование</h3>
+                <p class="our-services__construction--par">Конструирование, изготовление, нетрадиционной велотехники</p>
+                <img src="./img/svg/construction.svg" alt="picture" class="our-services__construction--picture">
             </div>
-            <div class="our-services--equipment">
-                <h3 class="our-services--equipment__header">Доп оборудование</h3>
-                <p class="our-services--equipment__par">Навеска нового и замена различного дополнительного оборудования,
+            <div class="our-services__equipment">
+                <h3 class="our-services__equipment--header">Доп оборудование</h3>
+                <p class="our-services__equipment--par">Навеска нового и замена различного дополнительного оборудования,
                     вело аксессуаров, электрооборудования</p>
-                <img src="./img/svg/equipment.svg" alt="picture" class="our-services--equipment__picture">
+                <img src="./img/svg/equipment.svg" alt="picture" class="our-services__equipment--picture">
             </div>
-            <div class="our-services--adjustment">
-                <h3 class="our-services--adjustment__header">Регулировка и ТО</h3>
-                <p class="our-services--adjustment__par">Регулировка и техническое обслуживание велосипедов любых марок
+            <div class="our-services__adjustment">
+                <h3 class="our-services__adjustment--header">Регулировка и ТО</h3>
+                <p class="our-services__adjustment--par">Регулировка и техническое обслуживание велосипедов любых марок
                     и конструкций -
                     новых и бывших в употреблении</p>
-                <img src="./img/svg/adjustment.svg" alt="picture" class="our-services--adjustment__picture">
+                <img src="./img/svg/adjustment.svg" alt="picture" class="our-services__adjustment--picture">
             </div>
-            <div class="our-services--consulting">
-                <h3 class="our-services--consulting__header">Консультации</h3>
-                <p class="ur-services--consulting__par">Консультации по вопросам выбора велосипеда, режима эксплуатации,
+            <div class="our-services__consulting">
+                <h3 class="our-services__consulting--header">Консультации</h3>
+                <p class="ur-services__consulting--par">Консультации по вопросам выбора велосипеда, режима эксплуатации,
                     хранения, самостоятельного обслуживания, ремонта и модернизации</p>
-                <img src="./img/svg/consult.svg" alt="picture" class="our-services--consulting__picture">
+                <img src="./img/svg/consult.svg" alt="picture" class="our-services__consulting--picture">
             </div>
-            <div class="our-services--sales">
-                <h3 class="our-services--sales__header">Продажа и доставка</h3>
-                <p class="our-services--sales__par">Продажа велосипедов, запасных частей, вело аксессуаров, в том числе
+            <div class="our-services__sales">
+                <h3 class="our-services__sales--header">Продажа и доставка</h3>
+                <p class="our-services__sales--par">Продажа велосипедов, запасных частей, вело аксессуаров, в том числе
                     доставка эксклюзивных узлов и деталей на заказ</p>
-                <img src="./img/svg/sale.svg" alt="picture" class="our-services--sales__picture">
+                <img src="./img/svg/sale.svg" alt="picture" class="our-services__sales--picture">
             </div>
-            <div class="our-services--repair">
-                <h3 class="our-services--repair__header">Ремонт велосипедов</h3>
-                <p class="our-services--repair__par">Ремонт велосипедов любой сложности, любых марок и конструкций. Мы
+            <div class="our-services__repair">
+                <h3 class="our-services__repair--header">Ремонт велосипедов</h3>
+                <p class="our-services__repair--par">Ремонт велосипедов любой сложности, любых марок и конструкций. Мы
                     можем сделать ремонт Вашего велосипеда у Вас дома. Мы можем забрать Ваш велосипед в мастерскую,
                     отремонтировать и вернуть обратно.</p>
-                <img src="./img/svg/repair.svg" alt="picture" class="our-services--repair__picture">
+                <img src="./img/svg/repair.svg" alt="picture" class="our-services__repair--picture">
             </div>
         </div>
     </section>
     <section class="service-packages">
         <h2 class="service-packages__header">Пакеты обслуживания</h2>
-        <div class="service-packages--list">
-            <h3 class="service-packages--list__header">Профилактика</h3>
-            <p class="service-packages--list__par">от 300 грн</p>
-            <ul class="service-packages--list__items">
+        <div class="service-packages__list">
+            <h3 class="service-packages__list--header">Профилактика</h3>
+            <p class="service-packages__list--par">от 300 грн</p>
+            <ul class="service-packages__list--items">
                 <li>осмотр велосипеда</li>
                 <li>рекомендации по ремонту</li>
                 <li>настройка скоростей</li>
                 <li>настройка тормозов</li>
             </ul>
         </div>
-        <div class="service-packages--list">
-            <h3 class="service-packages--list__header">Профилактика +</h3>
-            <p class="service-packages--list__par">от 450 грн</p>
-            <ul class="service-packages--list__items">
+        <div class="service-packages__list">
+            <h3 class="service-packages__list--header">Профилактика +</h3>
+            <p class="service-packages__list--par">от 450 грн</p>
+            <ul class="service-packages__list--items">
                 <li>осмотр велосипеда</li>
                 <li>рекомендации по ремонту</li>
                 <li>настройка скоростей</li>
@@ -138,10 +148,10 @@
                 <li>смазка цепи</li>
             </ul>
         </div>
-        <div class="service-packages--list">
-            <h3 class="service-packages--list__header">ТО</h3>
-            <p class="service-packages--list__par">от 700 грн</p>
-            <ul class="service-packages--list__items">
+        <div class="service-packages__list">
+            <h3 class="service-packages__list--header">ТО</h3>
+            <p class="service-packages__list--par">от 700 грн</p>
+            <ul class="service-packages__list--items">
                 <li>мойка велосипеда</li>
                 <li>чистка системы</li>
                 <li>чистка и смазка всех втулок</li>
@@ -153,10 +163,10 @@
                 <li>правка колёс</li>
             </ul>
         </div>
-        <div class="service-packages--list">
-            <h3 class="service-packages--list__header">ТО +</h3>
-            <p class="service-packages--list__par">от 1000 грн</p>
-            <ul class="service-packages--list__items">
+        <div class="service-packages__list">
+            <h3 class="service-packages__list--header">ТО +</h3>
+            <p class="service-packages__list--par">от 1000 грн</p>
+            <ul class="service-packages__list--items">
                 <li>мойка велосипеда</li>
                 <li>чистка системы</li>
                 <li>чистка и смазка всех втулок</li>
@@ -172,16 +182,16 @@
         </div>
     </section>
     <section class="prices">
-        <div class="prices--cover">
-            <h2 class="prices--header">Цены</h2>
-            <table class="prices--table">
+        <div class="prices__cover">
+            <h2 class="prices__header">Цены</h2>
+            <table class="prices__table">
                 <tr>
                     <td>Название работы</td>
                     <td>Подробности проделаной работы</td>
                     <td>Стоимость, грн</td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="prices--table__name">Рама</td>
+                    <td colspan="3" class="prices__table--name">Рама</td>
                 </tr>
                 <tr>
                     <td>Сборка велосипеда</td>
@@ -199,7 +209,7 @@
                     <td>от 50 грн</td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="prices--table__name">Вилка</td>
+                    <td colspan="3" class="prices__table--name">Вилка</td>
                 </tr>
                 <tr>
                     <td>Замена жесткой / амортизац. Вилки</td>
@@ -215,7 +225,7 @@
                     <td>от 250 до 600 грн</td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="prices--table__name">Тормоза</td>
+                    <td colspan="3" class="prices__table--name">Тормоза</td>
                 </tr>
                 <tr>
                     <td>Прокачка гидравлики</td>
@@ -223,7 +233,7 @@
                     <td>100 грн</td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="prices--table__name">Руль и Рулевая колонка</td>
+                    <td colspan="3" class="prices__table--name">Руль и Рулевая колонка</td>
                 </tr>
                 <tr>
                     <td>Переборка рулевой колонки</td>
@@ -247,7 +257,7 @@
                     <td>100 грн</td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="prices--table__name">Колеса</td>
+                    <td colspan="3" class="prices__table--name">Колеса</td>
                 </tr>
                 <tr>
                     <td>Центровка колеса</td>
@@ -298,7 +308,7 @@
                     <td>от 60 грн</td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="prices--table__name">Чистка велосипеда</td>
+                    <td colspan="3" class="prices__table--name">Чистка велосипеда</td>
                 </tr>
                 <tr>
                     <td>Мойка велосипеда</td>
@@ -313,7 +323,7 @@
                     <td>50-200 грн</td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="prices--table__name">Профилактика велосипеда </td>
+                    <td colspan="3" class="prices__table--name">Профилактика велосипеда </td>
                 </tr>
                 <tr>
                     <td colspan="3">Профилактический осмотр велосипеда – заключает в себе чистку, смазку, настройку всех
@@ -351,7 +361,7 @@
                     <td colspan="3">В цену за профилактический осмотр велосипеда перебор вилки не учитываеться.</td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="prices--table__name">Дополнительные услуги</td>
+                    <td colspan="3" class="prices__table--name">Дополнительные услуги</td>
                 </tr>
                 <tr>
                     <td>Трансфер вашего велосипеда</td>

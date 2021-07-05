@@ -1,15 +1,22 @@
 .navigation {
-    width: 1440px;
-    position: relative;
-    &--logo {
-        position: absolute;
+    width: 1140px;
+    background: #000000;
+    &__cover {
+        &--logo {
+            top: 25px;
+            left: 125px;
+        }
     }
-    &--menu {
+
+    &__menu {
+        width: 887px;
+        top: 50px;
+        left: 340px;
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
 
-        &__nav {
+        &--nav {
             text-decoration: none;
             color: #ffffff;
             font-family: Raleway;

@@ -1,35 +1,49 @@
 .first-page {
-    width: 1440px;
+    width: 1140px;
+    height: 870px;
     background: #000000;
-    &--cover {
+    &__cover {
         position: relative;
-        width: 1140px;
         margin: 0 auto;
-        &__header {
+        &--picture {
+            position: absolute;
+            width: 759px;
+            height: 537px;
+            left: 353px;
+            top: 111px;
+        }
+    }
+    &__desc {
+        position: absolute;
+        top: 200px;
+        left: 125px;
+        width: 492px;
+        z-index: 10;
+        &--header {
             font-family: Raleway;
             font-size: 42px;
             line-height: 64px;
             color: #ffffff;
         }
-        &__par {
+        &--par {
             font-family: Lato;
             font-size: 18px;
             line-height: 28px;
             color: #ffffff;
         }
-        &__btn {
-            width: 340px;
+        &--btn {
+            display: block;
+            width: 325px;
             height: 60px;
             background: linear-gradient(81.51deg, #fc7a4b 7.36%, #cf0054 49.57%, #790054 93.51%);
             border-radius: 30px;
             font-family: Raleway;
             font-size: 18px;
-            line-height: 28px;
+            line-height: 50px;
+            font-weight: 600;
             color: #ffffff;
-        }
-        &__picture {
-            position: absolute;
-            size: 100%;
+            text-decoration: none;
+            text-align: center;
         }
     }
 }
