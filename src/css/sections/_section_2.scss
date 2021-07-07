@@ -1,45 +1,55 @@
 .about-us {
-    width: 1140px;
-    height: 870px;
+    overflow: hidden;
+    position: relative;
     &__cover {
-        position: relative;
+        width: 1140px;
+        height: 870px;
+        margin: 0 auto;
         z-index: 1;
-        &--wave {
-            top: -350px;
-            position: absolute;
-            overflow: hidden;
-            margin: 0 auto;
-            z-index: 0;
-        }
+    }
+    &__wave {
+        bottom: -89%;
+        position: absolute;
+        z-index: 0;
     }
     &__disc {
         top: 62px;
         width: 557px;
         height: 221px;
         margin: 0 auto;
+        margin-bottom: 130px;
         z-index: 2;
         &--header {
             margin-top: 60px;
             font-family: Raleway;
+            text-align: center;
             font-size: 42px;
             line-height: 64px;
         }
         &--par {
             margin-top: 20px;
             font-family: Lato;
+            text-align: center;
             font-size: 18px;
             line-height: 28px;
+        }
+        &--links {
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            justify-content: space-between;
         }
     }
     &__blocks {
         display: flex;
-        position: absolute;
+        margin: 0 auto;
         &--item {
             width: 243px;
             height: 243px;
             background: #ffffff;
             border-radius: 30px;
             margin-right: 100px;
+            text-align: center;
         }
         &--pic {
             margin: 0 auto;

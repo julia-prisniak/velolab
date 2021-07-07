@@ -1,10 +1,11 @@
 .navigation {
-    width: 1140px;
     background: #000000;
     &__cover {
+        margin: 0 auto;
+        width: 1140px;
         &--logo {
             top: 25px;
-            left: 125px;
+            margin-right: 40px;
         }
     }
 

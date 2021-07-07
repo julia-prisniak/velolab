@@ -1,3 +1,37 @@
 .service-packages {
-    width: 1140px;
+    &__cover {
+        width: 1140px;
+        &--header {
+            margin: 0 auto;
+            font-family: Raleway;
+            font-size: 42px;
+            line-height: 64px;
+            text-align: center;
+        }
+    }
+    &__shell {
+        display: flex;
+        margin: 0 auto;
+    }
+    &__block {
+        width: 277px;
+        height: 669px;
+    }
+    &__disc {
+        background: linear-gradient(99.05deg, #ff916a -14.9%, #ee6061 106.05%);
+        border-radius: 10px 10px 0px 0px;
+        &--header {
+            font-family: Raleway;
+            font-size: 30px;
+            text-align: center;
+            color: #ffffff;
+        }
+        &--par {
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
+            text-align: center;
+        }
+    }
 }

@@ -1,22 +1,21 @@
 .first-page {
-    width: 1140px;
-    height: 870px;
     background: #000000;
     &__cover {
+        width: 1140px;
+        height: 870px;
         position: relative;
         margin: 0 auto;
         &--picture {
             position: absolute;
             width: 759px;
             height: 537px;
-            left: 353px;
+            left: 453px;
             top: 111px;
         }
     }
     &__desc {
         position: absolute;
         top: 200px;
-        left: 125px;
         width: 492px;
         z-index: 10;
         &--header {
@@ -24,12 +23,14 @@
             font-size: 42px;
             line-height: 64px;
             color: #ffffff;
+            margin-bottom: 40px;
         }
         &--par {
             font-family: Lato;
             font-size: 18px;
             line-height: 28px;
             color: #ffffff;
+            margin-bottom: 50px;
         }
         &--btn {
             display: block;
