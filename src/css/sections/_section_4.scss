@@ -1,6 +1,7 @@
 .service-packages {
     &__cover {
         width: 1140px;
+        margin: 0 auto;
         &--header {
             margin: 0 auto;
             font-family: Raleway;
@@ -20,6 +21,7 @@
     &__disc {
         background: linear-gradient(99.05deg, #ff916a -14.9%, #ee6061 106.05%);
         border-radius: 10px 10px 0px 0px;
+        margin-right: 15px;
         &--header {
             font-family: Raleway;
             font-size: 30px;
