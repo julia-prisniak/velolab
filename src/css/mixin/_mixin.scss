@@ -1,0 +1,14 @@
+@mixin btn {
+    display: block;
+    width: 325px;
+    height: 60px;
+    background: linear-gradient(81.51deg, #fc7a4b 7.36%, #cf0054 49.57%, #790054 93.51%);
+    border-radius: 30px;
+    font-family: Raleway;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}

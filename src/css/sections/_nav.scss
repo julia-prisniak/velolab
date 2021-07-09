@@ -3,10 +3,8 @@
     &__cover {
         margin: 0 auto;
         width: 1140px;
-        &--logo {
-            top: 25px;
-            margin-right: 40px;
-        }
+        display: flex;
+        padding-top: 15px;
     }
 
     &__menu {
@@ -14,14 +12,15 @@
         top: 50px;
         left: 340px;
         display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
 
         &--nav {
+            margin-left: 45px;
+            padding-top: 35px;
             text-decoration: none;
             color: #ffffff;
             font-family: Raleway;
             font-size: 18px;
+            line-height: 21px;
         }
     }
 }

@@ -1,18 +1,74 @@
 .our-services {
     &__cover {
-        width: 1140px;
+        width: 1440px;
+        height: 800px;
         margin: 0 auto;
         &--header {
             margin: 0 auto;
+            padding: 55px 0 55px 0;
             font-family: Raleway;
             font-size: 42px;
             line-height: 64px;
             text-align: center;
         }
     }
-    &__grid {
+    &__grid-top {
         display: grid;
-        grid-template-columns: 525px, 357px, 525px;
-        grid-template-rows: repeat(4 200px);
+        grid-template-columns: 525px 357px 542px;
+        grid-template-rows: repeat(2, 200px);
+        gap: 8px 8px;
+    }
+    &__item-sp {
+        flex-direction: column;
+        width: 357px;
+        height: 408px;
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+    &__grid-bottom {
+        display: grid;
+        grid-template-columns: 392px 390px 542px;
+        grid-template-rows: 200px 287px;
+        gap: 8px 8px;
+    }
+    &__item-to {
+        flex-direction: row;
+        width: 890px;
+        height: 200px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    &__item-rep {
+        flex-direction: column;
+        width: 542px;
+        height: 495px;
+        grid-column-start: 3;
+        grid-column-end: 6;
+    }
+    &__item {
+        flex-direction: column;
+        position: relative;
+        &--header {
+            margin-top: 27px;
+            font-family: Raleway;
+            font-size: 28px;
+            line-height: 36px;
+            color: #ffffff;
+        }
+        &--par {
+            margin-top: 20px;
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+        &--picture {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
     }
 }
