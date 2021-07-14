@@ -1,7 +1,6 @@
 .our-services {
     &__cover {
         width: 1440px;
-        height: 800px;
         margin: 0 auto;
         &--header {
             margin: 0 auto;
@@ -12,63 +11,91 @@
             text-align: center;
         }
     }
+    &__grid {
+        display: grid;
+        grid-template-columns: 492px 390px 542px 1fr;
+        grid-template-rows: 200px 200px 200px 287px;
+        grid-auto-rows: 1fr;
+        gap: 8px 8px;
+        grid-auto-flow: row dense;
+        grid-template-areas:
+            "top top top ."
+            "top top top ."
+            "bottom bottom bottom ."
+            "bottom bottom bottom .";
+    }
+
     &__grid-top {
+        position: relative;
         display: grid;
         grid-template-columns: 525px 357px 542px;
-        grid-template-rows: repeat(2, 200px);
+        grid-template-rows: 200px 200px;
         gap: 8px 8px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "fd app constr"
+            "qual app equip";
+        grid-area: top;
+
+        &--app {
+            grid-area: app;
+        }
+
+        &--qual {
+            grid-area: qual;
+        }
+
+        &--constr {
+            grid-area: constr;
+        }
+
+        &--equip {
+            grid-area: equip;
+        }
     }
-    &__item-sp {
-        flex-direction: column;
-        width: 357px;
-        height: 408px;
-        grid-column-start: 2;
-        grid-column-end: 5;
-    }
-    &__grid-bottom {
-        display: grid;
-        grid-template-columns: 392px 390px 542px;
-        grid-template-rows: 200px 287px;
-        gap: 8px 8px;
-    }
-    &__item-to {
-        flex-direction: row;
-        width: 890px;
-        height: 200px;
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    &__item-rep {
-        flex-direction: column;
-        width: 542px;
-        height: 495px;
-        grid-column-start: 3;
-        grid-column-end: 6;
-    }
-    &__item {
-        flex-direction: column;
-        position: relative;
+    &__fd {
+        grid-area: fd;
+        &--img {
+            z-index: -1;
+        }
         &--header {
-            margin-top: 27px;
             font-family: Raleway;
             font-size: 28px;
             line-height: 36px;
             color: #ffffff;
         }
         &--par {
-            margin-top: 20px;
             font-family: Lato;
             font-size: 18px;
             line-height: 24px;
             color: #ffffff;
         }
-        &--picture {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            height: 100%;
-            width: 100%;
-            z-index: -1;
+    }
+    &__grid-bottom {
+        display: grid;
+        grid-template-columns: 492px 390px 542px;
+        grid-template-rows: 200px 287px;
+        gap: 8px 8px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "adj adj repair"
+            "consult sale repair";
+        grid-area: bottom;
+
+        &--adj {
+            grid-area: adj;
+        }
+
+        &--repair {
+            grid-area: repair;
+        }
+
+        &--consult {
+            grid-area: consult;
+        }
+
+        &--sale {
+            grid-area: sale;
         }
     }
 }

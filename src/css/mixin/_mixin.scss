@@ -12,3 +12,23 @@
     text-decoration: none;
     text-align: center;
 }
+@mixin header-h2 {
+    margin: 0 auto;
+    padding: 55px 0 55px 0;
+    font-family: Raleway;
+    font-size: 42px;
+    line-height: 64px;
+    text-align: center;
+}
+@mixin header-h3 {
+    font-family: Raleway;
+    font-size: 28px;
+    line-height: 36px;
+    color: #ffffff;
+}
+@mixin par {
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
