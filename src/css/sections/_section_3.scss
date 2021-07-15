@@ -1,6 +1,6 @@
 .our-services {
     &__cover {
-        width: 1440px;
+        width: 1140px;
         margin: 0 auto;
         &--header {
             margin: 0 auto;
@@ -26,7 +26,6 @@
     }
 
     &__grid-top {
-        position: relative;
         display: grid;
         grid-template-columns: 525px 357px 542px;
         grid-template-rows: 200px 200px;
@@ -36,35 +35,152 @@
             "fd app constr"
             "qual app equip";
         grid-area: top;
-
-        &--app {
-            grid-area: app;
-        }
-
-        &--qual {
-            grid-area: qual;
-        }
-
-        &--constr {
-            grid-area: constr;
-        }
-
-        &--equip {
-            grid-area: equip;
-        }
     }
-    &__fd {
-        grid-area: fd;
+
+    &__app {
+        grid-area: app;
+        position: relative;
         &--img {
-            z-index: -1;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -10;
         }
         &--header {
+            padding-left: 15px;
+            padding-top: 27px;
             font-family: Raleway;
             font-size: 28px;
             line-height: 36px;
             color: #ffffff;
         }
         &--par {
+            padding-left: 15px;
+            padding-top: 20px;
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+    }
+
+    &__qual {
+        grid-area: qual;
+        position: relative;
+        &--img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -10;
+        }
+        &--header {
+            padding-top: 27px;
+            padding-left: 165px;
+            font-family: Raleway;
+            font-size: 28px;
+            line-height: 36px;
+            color: #ffffff;
+        }
+        &--par {
+            padding-left: 165px;
+            padding-top: 20px;
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+    }
+
+    &__constr {
+        grid-area: constr;
+        position: relative;
+        &--img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -10;
+        }
+        &--header {
+            padding-top: 27px;
+            padding-left: 15px;
+            font-family: Raleway;
+            font-size: 28px;
+            line-height: 36px;
+            color: #ffffff;
+        }
+        &--par {
+            padding-top: 20px;
+            padding-left: 15px;
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+    }
+
+    &__equip {
+        grid-area: equip;
+        position: relative;
+        &--img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -10;
+        }
+        &--header {
+            padding-top: 27px;
+            padding-left: 15px;
+            font-family: Raleway;
+            font-size: 28px;
+            line-height: 36px;
+            color: #ffffff;
+        }
+        &--par {
+            padding-top: 20px;
+            padding-left: 15px;
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+    }
+
+    &__fd {
+        grid-area: fd;
+        position: relative;
+        &--img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -10;
+        }
+        &--header {
+            width: 250px;
+            padding-top: 27px;
+            padding-left: 165px;
+            font-family: Raleway;
+            font-size: 28px;
+            line-height: 36px;
+            color: #ffffff;
+        }
+        &--par {
+            padding-top: 20px;
+            padding-left: 165px;
             font-family: Lato;
             font-size: 18px;
             line-height: 24px;
@@ -81,21 +197,126 @@
             "adj adj repair"
             "consult sale repair";
         grid-area: bottom;
+    }
 
-        &--adj {
-            grid-area: adj;
+    &__adj {
+        grid-area: adj;
+        position: relative;
+        &--img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -10;
         }
-
-        &--repair {
-            grid-area: repair;
+        &--header {
+            padding-top: 27px;
+            padding-left: 165px;
+            font-family: Raleway;
+            font-size: 28px;
+            line-height: 36px;
+            color: #ffffff;
         }
-
-        &--consult {
-            grid-area: consult;
+        &--par {
+            width: 500px;
+            padding-top: 20px;
+            padding-left: 165px;
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
         }
+    }
 
-        &--sale {
-            grid-area: sale;
+    &__repair {
+        grid-area: repair;
+        position: relative;
+        &--img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -10;
+        }
+        &--header {
+            padding-top: 27px;
+            padding-left: 15px;
+            font-family: Raleway;
+            font-size: 28px;
+            line-height: 36px;
+            color: #ffffff;
+        }
+        &--par {
+            padding-top: 20px;
+            padding-left: 15px;
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+    }
+
+    &__consult {
+        grid-area: consult;
+        position: relative;
+        &--img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -10;
+        }
+        &--header {
+            padding-top: 27px;
+            padding-left: 165px;
+            font-family: Raleway;
+            font-size: 28px;
+            line-height: 36px;
+            color: #ffffff;
+        }
+        &--par {
+            padding-top: 27px;
+            padding-left: 165px;
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
+        }
+    }
+
+    &__sale {
+        grid-area: sale;
+        position: relative;
+        &--img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -10;
+        }
+        &--header {
+            padding-top: 27px;
+            padding-left: 15px;
+            font-family: Raleway;
+            font-size: 28px;
+            line-height: 36px;
+            color: #ffffff;
+        }
+        &--par {
+            padding-top: 27px;
+            padding-left: 15px;
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 24px;
+            color: #ffffff;
         }
     }
 }
