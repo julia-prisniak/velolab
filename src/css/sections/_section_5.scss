@@ -2,12 +2,15 @@
     &__cover {
         width: 1140px;
         margin: 0 auto;
+        padding-bottom: 125px;
     }
     &__header {
         font-family: Raleway;
         font-size: 42px;
         line-height: 64px;
         margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 40px;
         text-align: center;
     }
     &__table {
@@ -21,6 +24,45 @@
             font-size: 18px;
             line-height: 36px;
             color: #ffffff;
+        }
+        &--tr {
+            font-family: Lato, Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 40px;
+        }
+    }
+    &__btn {
+        display: block;
+        width: 325px;
+        height: 60px;
+        background: linear-gradient(81.51deg, #fc7a4b 7.36%, #cf0054 49.57%, #790054 93.51%);
+        border-radius: 30px;
+        font-family: Raleway;
+        font-size: 18px;
+        line-height: 50px;
+        font-weight: 600;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 5px;
+        margin: 0 auto;
+    }
+    &__download {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        &--img {
+            position: absolute;
+            top: 10%;
+        }
+        &--par {
+            padding-left: 35px;
+            color: #000000;
+            font-family: Raleway;
+            font-size: 24px;
+            line-height: 36px;
         }
     }
 }

@@ -1,6 +1,6 @@
 .our-services {
     &__cover {
-        width: 1140px;
+        width: fit-content;
         margin: 0 auto;
         &--header {
             margin: 0 auto;
@@ -60,7 +60,7 @@
         &--par {
             padding-left: 15px;
             padding-top: 20px;
-            font-family: Lato;
+            font-family: Lato, Helvetica, Arial, sans-serif;
             font-size: 18px;
             line-height: 24px;
             color: #ffffff;
@@ -90,7 +90,7 @@
         &--par {
             padding-left: 165px;
             padding-top: 20px;
-            font-family: Lato;
+            font-family: Lato, Helvetica, Arial, sans-serif;
             font-size: 18px;
             line-height: 24px;
             color: #ffffff;
@@ -120,7 +120,7 @@
         &--par {
             padding-top: 20px;
             padding-left: 15px;
-            font-family: Lato;
+            font-family: Lato, Helvetica, Arial, sans-serif;
             font-size: 18px;
             line-height: 24px;
             color: #ffffff;
@@ -150,7 +150,7 @@
         &--par {
             padding-top: 20px;
             padding-left: 15px;
-            font-family: Lato;
+            font-family: Lato, Helvetica, Arial, sans-serif;
             font-size: 18px;
             line-height: 24px;
             color: #ffffff;
@@ -181,7 +181,7 @@
         &--par {
             padding-top: 20px;
             padding-left: 165px;
-            font-family: Lato;
+            font-family: Lato, Helvetica, Arial, sans-serif;
             font-size: 18px;
             line-height: 24px;
             color: #ffffff;
@@ -223,7 +223,7 @@
             width: 500px;
             padding-top: 20px;
             padding-left: 165px;
-            font-family: Lato;
+            font-family: Lato, Helvetica, Arial, sans-serif;
             font-size: 18px;
             line-height: 24px;
             color: #ffffff;
@@ -253,7 +253,7 @@
         &--par {
             padding-top: 20px;
             padding-left: 15px;
-            font-family: Lato;
+            font-family: Lato, Helvetica, Arial, sans-serif;
             font-size: 18px;
             line-height: 24px;
             color: #ffffff;
@@ -283,7 +283,7 @@
         &--par {
             padding-top: 27px;
             padding-left: 165px;
-            font-family: Lato;
+            font-family: Lato, Helvetica, Arial, sans-serif;
             font-size: 18px;
             line-height: 24px;
             color: #ffffff;
@@ -313,7 +313,7 @@
         &--par {
             padding-top: 27px;
             padding-left: 15px;
-            font-family: Lato;
+            font-family: Lato, Helvetica, Arial, sans-serif;
             font-size: 18px;
             line-height: 24px;
             color: #ffffff;

@@ -18,9 +18,7 @@
     &__disc {
         top: 62px;
         width: 557px;
-        height: 221px;
         margin: 0 auto;
-        margin-bottom: 130px;
         z-index: 2;
         &--header {
             margin-top: 60px;
@@ -31,32 +29,51 @@
         }
         &--par {
             margin-top: 20px;
-            font-family: Lato;
+            font-family: Lato, Helvetica, Arial, sans-serif;
             text-align: center;
             font-size: 18px;
             line-height: 28px;
         }
-        &--links {
-            margin-top: 60px;
-            margin-right: 100px;
-            text-decoration: none;
-            text-align: center;
-            display: flex;
-            font-family: Lato;
+    }
+    &__links {
+        padding-top: 43px;
+        padding-bottom: 130px;
+        width: 275px;
+        background: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__teg {
+        text-decoration: none;
+        text-align: center;
+    }
+    &__link {
+        position: relative;
+        display: flex;
+        &--img {
+            top: 30%;
+            left: 135%;
+            position: absolute;
+        }
+        &--text {
+            font-family: Lato, Helvetica, Arial, sans-serif;
             font-size: 24px;
             line-height: 36px;
             color: #341678;
         }
     }
     &__blocks {
+        padding-top: 150px;
+        width: 930px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        margin: 0 auto;
         &--item {
             width: 243px;
             height: 243px;
             background: #ffffff;
             border-radius: 30px;
-            margin-right: 100px;
             text-align: center;
         }
         &--pic {

@@ -1,3 +1,81 @@
 .footer {
-    width: 1140px;
+    &__cover {
+        width: 1140px;
+        margin: 0 auto;
+    }
+    &__top {
+        position: relative;
+        top: 300px;
+        display: flex;
+        justify-content: space-between;
+        background: #000000;
+    }
+    &__menu {
+        padding-top: 30px;
+        padding-left: 100px;
+        padding-bottom: 25px;
+        &--header {
+            color: #ffffff;
+            font-family: Raleway;
+            font-size: 18px;
+            line-height: 36px;
+        }
+        &--par {
+            font-family: Lato;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    &__phones {
+        padding-top: 30px;
+        position: relative;
+        &--header {
+            font-family: Raleway;
+            font-size: 18px;
+            line-height: 36px;
+            color: #ffffff;
+        }
+        &--img {
+            position: absolute;
+            top: 15%;
+            left: 0px;
+        }
+        &--par {
+            font-family: Lato;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    &__social {
+        padding-top: 80px;
+        position: relative;
+        &--img {
+            position: absolute;
+        }
+        &--par {
+            font-family: Lato;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    &__adress {
+        padding-top: 80px;
+        position: relative;
+        &--img {
+            position: absolute;
+        }
+        &--par {
+            font-family: Lato;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    &__bottom {
+        border-bottom: 1px solid white;
+        color: white;
+    }
 }
