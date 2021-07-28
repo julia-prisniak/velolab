@@ -69,17 +69,56 @@
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        &--item {
-            width: 243px;
-            height: 243px;
-            background: #ffffff;
-            border-radius: 30px;
-            text-align: center;
-        }
-        &--pic {
-            padding-top: 32px;
+    }
+    &__diamond {
+        width: 243px;
+        height: 243px;
+        background: #ffffff;
+        border-radius: 30px;
+        text-align: center;
+        &--img {
+            padding-top: 43px;
             padding-bottom: 21px;
             margin: 0 auto;
+        }
+        &--par {
+            font-family: Lato, Helvetica, Arial, sans-serif;
+            padding-left: 17px;
+            padding-right: 16px;
+        }
+    }
+    &__pig {
+        width: 243px;
+        height: 243px;
+        background: #ffffff;
+        border-radius: 30px;
+        text-align: center;
+        &--img {
+            padding-top: 32px;
+            padding-bottom: 18px;
+            margin: 0 auto;
+        }
+        &--par {
+            font-family: Lato, Helvetica, Arial, sans-serif;
+            padding-left: 17px;
+            padding-right: 16px;
+        }
+    }
+    &__trust {
+        width: 243px;
+        height: 243px;
+        background: #ffffff;
+        border-radius: 30px;
+        text-align: center;
+        &--img {
+            padding-top: 43px;
+            padding-bottom: 10px;
+            margin: 0 auto;
+        }
+        &--par {
+            font-family: Lato, Helvetica, Arial, sans-serif;
+            padding-left: 12px;
+            padding-right: 11px;
         }
     }
 }
