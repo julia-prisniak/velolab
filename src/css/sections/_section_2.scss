@@ -16,23 +16,17 @@
         margin: 0 auto;
     }
     &__disc {
-        top: 62px;
         width: 557px;
         margin: 0 auto;
         z-index: 2;
         &--header {
-            margin-top: 60px;
-            font-family: Raleway;
-            text-align: center;
-            font-size: 42px;
-            line-height: 64px;
+            padding-top: 62px;
+            @include header-h2;
         }
         &--par {
+            @include par;
+            color: #000000;
             margin-top: 20px;
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            text-align: center;
-            font-size: 18px;
-            line-height: 28px;
         }
     }
     &__links {
@@ -71,11 +65,7 @@
         margin: 0 auto;
     }
     &__diamond {
-        width: 243px;
-        height: 243px;
-        background: #ffffff;
-        border-radius: 30px;
-        text-align: center;
+        @include block;
         &--img {
             padding-top: 43px;
             padding-bottom: 21px;
@@ -88,11 +78,7 @@
         }
     }
     &__pig {
-        width: 243px;
-        height: 243px;
-        background: #ffffff;
-        border-radius: 30px;
-        text-align: center;
+        @include block;
         &--img {
             padding-top: 32px;
             padding-bottom: 18px;
@@ -105,11 +91,7 @@
         }
     }
     &__trust {
-        width: 243px;
-        height: 243px;
-        background: #ffffff;
-        border-radius: 30px;
-        text-align: center;
+        @include block;
         &--img {
             padding-top: 43px;
             padding-bottom: 10px;

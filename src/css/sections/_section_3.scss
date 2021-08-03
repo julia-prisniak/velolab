@@ -3,12 +3,8 @@
         width: fit-content;
         margin: 0 auto;
         &--header {
-            margin: 0 auto;
+            @include header-h2;
             padding: 55px 0 55px 0;
-            font-family: Raleway;
-            font-size: 42px;
-            line-height: 64px;
-            text-align: center;
         }
     }
     &__grid {
@@ -41,29 +37,17 @@
         grid-area: app;
         position: relative;
         &--img {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            z-index: -10;
+            @include img-cover;
         }
         &--header {
+            @include header-h3;
             padding-left: 15px;
             padding-top: 27px;
-            font-family: Raleway;
-            font-size: 28px;
-            line-height: 36px;
-            color: #ffffff;
         }
         &--par {
+            @include par;
             padding-left: 15px;
             padding-top: 20px;
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 24px;
-            color: #ffffff;
         }
     }
 
@@ -71,29 +55,17 @@
         grid-area: qual;
         position: relative;
         &--img {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            z-index: -10;
+            @include img-cover;
         }
         &--header {
+            @include header-h3;
             padding-top: 27px;
             padding-left: 165px;
-            font-family: Raleway;
-            font-size: 28px;
-            line-height: 36px;
-            color: #ffffff;
         }
         &--par {
+            @include par;
             padding-left: 165px;
             padding-top: 20px;
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 24px;
-            color: #ffffff;
         }
     }
 
@@ -101,30 +73,16 @@
         grid-area: constr;
         position: relative;
         &--img {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            z-index: -10;
+            @include img-cover;
         }
         &--header {
+            @include header-h3;
             padding-top: 27px;
             padding-left: 15px;
-            font-family: Raleway;
-            font-size: 28px;
-            line-height: 36px;
-            color: #ffffff;
         }
         &--par {
-            padding-top: 20px;
-            padding-left: 15px;
-            padding-right: 165px;
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 24px;
-            color: #ffffff;
+            @include par;
+            padding: 20px 165px 0 15px;
         }
     }
 
@@ -132,30 +90,16 @@
         grid-area: equip;
         position: relative;
         &--img {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            z-index: -10;
+            @include img-cover;
         }
         &--header {
+            @include header-h3;
             padding-top: 27px;
             padding-left: 15px;
-            font-family: Raleway;
-            font-size: 28px;
-            line-height: 36px;
-            color: #ffffff;
         }
         &--par {
-            padding-top: 20px;
-            padding-left: 15px;
-            padding-right: 165px;
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 24px;
-            color: #ffffff;
+            @include par;
+            padding: 20px 165px 0 15px;
         }
     }
 
@@ -163,30 +107,17 @@
         grid-area: fd;
         position: relative;
         &--img {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            z-index: -10;
+            @include img-cover;
         }
         &--header {
-            width: 250px;
+            @include header-h3;
             padding-top: 27px;
             padding-left: 165px;
-            font-family: Raleway;
-            font-size: 28px;
-            line-height: 36px;
-            color: #ffffff;
         }
         &--par {
+            @include par;
             padding-top: 20px;
             padding-left: 165px;
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 24px;
-            color: #ffffff;
         }
     }
     &__grid-bottom {
@@ -205,30 +136,16 @@
         grid-area: adj;
         position: relative;
         &--img {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            z-index: -10;
+            @include img-cover;
         }
         &--header {
+            @include header-h3;
             padding-top: 27px;
             padding-left: 165px;
-            font-family: Raleway;
-            font-size: 28px;
-            line-height: 36px;
-            color: #ffffff;
         }
         &--par {
-            width: 500px;
-            padding-top: 20px;
-            padding-left: 165px;
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 24px;
-            color: #ffffff;
+            @include par;
+            padding: 20px 315px 0 165px;
         }
     }
 
@@ -236,30 +153,16 @@
         grid-area: repair;
         position: relative;
         &--img {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            z-index: -10;
+            @include img-cover;
         }
         &--header {
+            @include header-h3;
             padding-top: 27px;
             padding-left: 15px;
-            font-family: Raleway;
-            font-size: 28px;
-            line-height: 36px;
-            color: #ffffff;
         }
         &--par {
-            padding-top: 20px;
-            padding-left: 15px;
-            padding-right: 175px;
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 24px;
-            color: #ffffff;
+            @include par;
+            padding: 20px 175px 0 15px;
         }
     }
 
@@ -267,29 +170,17 @@
         grid-area: consult;
         position: relative;
         &--img {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            z-index: -10;
+            @include img-cover;
         }
         &--header {
+            @include header-h3;
             padding-top: 27px;
             padding-left: 165px;
-            font-family: Raleway;
-            font-size: 28px;
-            line-height: 36px;
-            color: #ffffff;
         }
         &--par {
+            @include par;
             padding-top: 27px;
             padding-left: 165px;
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 24px;
-            color: #ffffff;
         }
     }
 
@@ -297,29 +188,17 @@
         grid-area: sale;
         position: relative;
         &--img {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            z-index: -10;
+            @include img-cover;
         }
         &--header {
+            @include header-h3;
             padding-top: 27px;
             padding-left: 15px;
-            font-family: Raleway;
-            font-size: 28px;
-            line-height: 36px;
-            color: #ffffff;
         }
         &--par {
+            @include par;
             padding-top: 27px;
             padding-left: 15px;
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 24px;
-            color: #ffffff;
         }
     }
 }

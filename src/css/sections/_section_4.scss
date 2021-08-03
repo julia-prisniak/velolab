@@ -5,11 +5,8 @@
         margin: 0 auto;
         padding-bottom: 18px;
         &--header {
+            @include header-h2;
             margin: 80px 0 40px 0;
-            font-family: Raleway;
-            font-size: 42px;
-            line-height: 64px;
-            text-align: center;
         }
     }
     &__shell {
@@ -56,10 +53,7 @@
             color: #ffffff;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 24px;
-            color: #ffffff;
+            @include par;
             text-align: center;
             padding-bottom: 20px;
         }

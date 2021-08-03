@@ -5,21 +5,20 @@
         padding-bottom: 125px;
     }
     &__header {
-        font-family: Raleway;
-        font-size: 42px;
-        line-height: 64px;
-        margin: 0 auto;
+        @include header-h2;
         padding-top: 80px;
         padding-bottom: 40px;
-        text-align: center;
     }
     &__table {
         width: 1140px;
         margin: 0 auto;
+        display: table;
         &--name {
             width: 1140px;
+            padding-top: 8px;
+            padding-bottom: 5px;
             text-align: center;
-            background: linear-gradient(81.51deg, #fc7a4b 7.36%, #cf0054 49.57%, #790054 93.51%);
+            background: $normal-color;
             font-family: Raleway;
             font-size: 18px;
             line-height: 36px;
@@ -29,29 +28,60 @@
             font-family: Raleway;
             font-size: 24px;
             line-height: 36px;
+            & td {
+                padding-bottom: 18px;
+            }
+            & td:nth-child(1) {
+                width: 380px;
+            }
+            & td:nth-child(2) {
+                width: 630px;
+            }
+            & td:nth-child(3) {
+                width: 180px;
+            }
         }
         &--tr {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 24px;
-            border-bottom: 1px solid #e6e6e6;
+            & td {
+                font-family: Lato, Helvetica, Arial, sans-serif;
+                font-size: 18px;
+                line-height: 24px;
+                padding-top: 12px;
+                padding-bottom: 14px;
+                vertical-align: text-top;
+                border-bottom: 1px solid #e6e6e6;
+            }
+            & td:nth-child(1) {
+                width: 380px;
+            }
+            & td:nth-child(2) {
+                width: 450px;
+                padding-right: 125px;
+            }
+            & td:nth-child(3) {
+                width: 180px;
+            }
         }
     }
     &__btn {
         display: block;
         width: 325px;
         height: 60px;
-        background: linear-gradient(81.51deg, #fc7a4b 7.36%, #cf0054 49.57%, #790054 93.51%);
+        background: $normal-color;
         border-radius: 30px;
-        font-family: Raleway;
-        font-size: 18px;
-        line-height: 50px;
-        font-weight: 600;
-        color: #ffffff;
-        text-decoration: none;
         text-align: center;
-        padding-top: 5px;
         margin: 0 auto;
+        &--name {
+            background: none;
+            color: #ffffff;
+            display: flex;
+            margin: 0 auto;
+            padding-top: 5px;
+            font-family: Raleway;
+            font-size: 18px;
+            line-height: 50px;
+            font-weight: 600;
+        }
     }
     &__download {
         position: relative;

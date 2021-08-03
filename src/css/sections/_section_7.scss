@@ -16,12 +16,9 @@
     &__time {
         padding-left: 65px;
         &--header {
-            padding-top: 40px;
-            padding-left: 150px;
-            padding-bottom: 24px;
-            font-family: Raleway;
-            font-size: 24px;
-            line-height: 36px;
+            @include header-h3;
+            color: #000000;
+            padding: 40px 0 24px 150px;
         }
     }
     &__weekdays {
@@ -39,11 +36,10 @@
     &__location {
         padding-right: 100px;
         &--header {
+            @include header-h3;
+            color: #000000;
             padding-top: 40px;
             padding-bottom: 25px;
-            font-family: Raleway;
-            font-size: 24px;
-            line-height: 36px;
         }
         &--par {
             padding-bottom: 15px;

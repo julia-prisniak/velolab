@@ -5,10 +5,7 @@
         padding-bottom: 40px;
     }
     &__header {
-        font-family: Raleway;
-        font-size: 42px;
-        line-height: 64px;
-        text-align: center;
+        @include header-h2;
         padding-bottom: 40px;
     }
     &__grid {
@@ -26,163 +23,97 @@
 
     &__question-one {
         grid-area: question-one;
-        position: relative;
-        background: #f4f4f4;
-        z-index: -11;
-        border-radius: 15px;
+        @include question;
         &--img {
-            position: absolute;
-            z-index: -10;
+            @include q-img;
         }
         &--header {
-            font-family: Raleway;
-            font-size: 24px;
-            line-height: 36px;
-            color: #ffffff;
+            @include q-h;
             padding: 15px 40px;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 28px;
-            padding: 22px 15px;
+            @include q-p;
         }
     }
 
     &__question-two {
         grid-area: question-two;
-        position: relative;
-        background: #f4f4f4;
-        z-index: -11;
-        border-radius: 15px;
+        @include question;
         &--img {
-            position: absolute;
-            z-index: -10;
+            @include q-img;
         }
         &--header {
-            font-family: Raleway;
-            font-size: 24px;
-            line-height: 36px;
-            color: #ffffff;
+            @include q-h;
             padding: 15px 40px;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 28px;
-            padding: 22px 15px;
+            @include q-p;
         }
     }
 
     &__question-three {
         grid-area: question-three;
-        position: relative;
-        background: #f4f4f4;
-        z-index: -11;
-        border-radius: 15px;
+        @include question;
         &--img {
-            position: absolute;
-            z-index: -10;
+            @include q-img;
         }
         &--header {
-            font-family: Raleway;
-            font-size: 24px;
-            line-height: 36px;
-            color: #ffffff;
+            @include q-h;
             padding: 15px 40px;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 28px;
-            padding: 22px 15px;
+            @include q-p;
         }
     }
 
     &__question-four {
         grid-area: question-four;
-        position: relative;
-        background: #f4f4f4;
-        z-index: -11;
-        border-radius: 15px;
+        @include question;
         &--img {
-            position: absolute;
-            z-index: -10;
+            @include q-img;
         }
         &--header {
-            font-family: Raleway;
-            font-size: 24px;
-            line-height: 36px;
-            color: #ffffff;
-            padding: 15px 40px;
+            @include q-h;
+            padding: 15px 15px;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 28px;
-            padding: 22px 15px;
+            @include q-p;
         }
     }
 
     &__question-five {
         grid-area: question-five;
-        position: relative;
-        background: #f4f4f4;
-        z-index: -11;
-        border-radius: 15px;
+        @include question;
         &--img {
-            position: absolute;
-            z-index: -10;
+            @include q-img;
         }
         &--header {
-            font-family: Raleway;
-            font-size: 24px;
-            line-height: 36px;
-            color: #ffffff;
+            @include q-h;
             padding: 15px 15px;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 28px;
-            padding: 25px 15px;
+            @include q-p;
         }
     }
 
     &__question-six {
         grid-area: question-six;
-        position: relative;
-        background: #f4f4f4;
-        z-index: -11;
-        border-radius: 15px;
+        @include question;
         &--img {
-            position: absolute;
-            z-index: -10;
+            @include q-img;
         }
         &--header {
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 36px;
-            color: #ffffff;
+            @include q-h;
             padding: 15px 15px;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            font-size: 18px;
-            line-height: 28px;
-            padding: 25px 15px;
+            @include q-p;
         }
     }
     &__contact-us {
         &--header {
+            @include header-h2;
             padding-top: 55px;
-            font-family: Raleway;
-            font-size: 42px;
-            line-height: 64px;
-            text-align: center;
-            margin: 0 auto;
         }
     }
     &__shell {

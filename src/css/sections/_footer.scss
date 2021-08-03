@@ -18,13 +18,10 @@
         display: flex;
         background: #000000;
         &--par {
+            @include f-par;
             margin: 0 auto;
             padding-bottom: 13px;
             padding-top: 18px;
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            color: #ffffff;
-            font-size: 16px;
-            line-height: 28px;
         }
     }
     &__menu {
@@ -38,10 +35,7 @@
             line-height: 36px;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            color: #ffffff;
-            font-size: 16px;
-            line-height: 28px;
+            @include f-par;
         }
     }
     &__phones {
@@ -63,10 +57,7 @@
             left: 0px;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            color: #ffffff;
-            font-size: 16px;
-            line-height: 28px;
+            @include f-par;
             padding-left: 25px;
         }
     }
@@ -78,10 +69,7 @@
             left: 0px;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            color: #ffffff;
-            font-size: 16px;
-            line-height: 28px;
+            @include f-par;
             padding-left: 25px;
         }
     }
@@ -93,10 +81,7 @@
             left: 0px;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            color: #ffffff;
-            font-size: 16px;
-            line-height: 28px;
+            @include f-par;
             padding-left: 25px;
         }
     }
@@ -110,10 +95,7 @@
             position: absolute;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            color: #ffffff;
-            font-size: 16px;
-            line-height: 28px;
+            @include f-par;
             padding-left: 35px;
         }
     }
@@ -124,10 +106,7 @@
             position: absolute;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            color: #ffffff;
-            font-size: 16px;
-            line-height: 28px;
+            @include f-par;
             padding-left: 35px;
         }
     }
@@ -138,10 +117,7 @@
             position: absolute;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            color: #ffffff;
-            font-size: 16px;
-            line-height: 28px;
+            @include f-par;
             padding-left: 35px;
         }
     }
@@ -158,10 +134,7 @@
             left: 0;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            color: #ffffff;
-            font-size: 16px;
-            line-height: 28px;
+            @include f-par;
             padding-left: 25px;
         }
     }
@@ -173,10 +146,7 @@
             left: 0;
         }
         &--par {
-            font-family: Lato, Helvetica, Arial, sans-serif;
-            color: #ffffff;
-            font-size: 16px;
-            line-height: 28px;
+            @include f-par;
             padding-left: 25px;
         }
     }
