@@ -9,28 +9,48 @@
     }
     &__grid {
         display: grid;
-        grid-template-columns: 492px 390px 542px 1fr;
+        grid-template-columns: 525px 357px 542px;
         grid-template-rows: 200px 200px 200px 287px;
         grid-auto-rows: 1fr;
         gap: 8px 8px;
         grid-auto-flow: row dense;
         grid-template-areas:
-            "top top top ."
-            "top top top ."
-            "bottom bottom bottom ."
-            "bottom bottom bottom .";
+            "grid-one grid-one grid-two"
+            "grid-one grid-one grid-two"
+            "grid-three grid-three grid-two"
+            "grid-three grid-three grid-two";
+        width: 100%;
+        height: 100%;
     }
 
-    &__grid-top {
+    &__grid-one {
         display: grid;
-        grid-template-columns: 525px 357px 542px;
+        grid-template-columns: 525px 357px;
         grid-template-rows: 200px 200px;
         gap: 8px 8px;
         grid-auto-flow: row;
         grid-template-areas:
-            "fd app constr"
-            "qual app equip";
-        grid-area: top;
+            "fd app"
+            "qual app";
+        grid-area: grid-one;
+    }
+
+    &__fd {
+        grid-area: fd;
+        position: relative;
+        &--img {
+            @include img-cover;
+        }
+        &--header {
+            @include header-h3;
+            padding-top: 27px;
+            padding-left: 165px;
+        }
+        &--par {
+            @include par;
+            padding-top: 20px;
+            padding-left: 165px;
+        }
     }
 
     &__app {
@@ -69,6 +89,20 @@
         }
     }
 
+    &__grid-two {
+        display: grid;
+        grid-template-columns: 542px;
+        grid-template-rows: 200px 200px 200px 287px;
+        gap: 8px 8px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "constr"
+            "equip"
+            "repair"
+            "repair";
+        grid-area: grid-two;
+    }
+
     &__constr {
         grid-area: constr;
         position: relative;
@@ -103,8 +137,8 @@
         }
     }
 
-    &__fd {
-        grid-area: fd;
+    &__repair {
+        grid-area: repair;
         position: relative;
         &--img {
             @include img-cover;
@@ -112,24 +146,24 @@
         &--header {
             @include header-h3;
             padding-top: 27px;
-            padding-left: 165px;
+            padding-left: 15px;
         }
         &--par {
             @include par;
-            padding-top: 20px;
-            padding-left: 165px;
+            padding: 20px 175px 0 15px;
         }
     }
-    &__grid-bottom {
+
+    &__grid-three {
         display: grid;
-        grid-template-columns: 492px 390px 542px;
+        grid-template-columns: 492px 390px;
         grid-template-rows: 200px 287px;
         gap: 8px 8px;
         grid-auto-flow: row;
         grid-template-areas:
-            "adj adj repair"
-            "consult sale repair";
-        grid-area: bottom;
+            "adj adj"
+            "consult sale";
+        grid-area: grid-three;
     }
 
     &__adj {
@@ -146,23 +180,6 @@
         &--par {
             @include par;
             padding: 20px 315px 0 165px;
-        }
-    }
-
-    &__repair {
-        grid-area: repair;
-        position: relative;
-        &--img {
-            @include img-cover;
-        }
-        &--header {
-            @include header-h3;
-            padding-top: 27px;
-            padding-left: 15px;
-        }
-        &--par {
-            @include par;
-            padding: 20px 175px 0 15px;
         }
     }
 
@@ -199,6 +216,233 @@
             @include par;
             padding-top: 27px;
             padding-left: 15px;
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .our-services {
+        &__cover {
+            width: 935px;
+            margin: 0 auto;
+            &--header {
+                @include header-h2;
+                padding: 55px 0 55px 0;
+            }
+        }
+        &__grid {
+            display: grid;
+            grid-template-columns: 525px 427px;
+            grid-template-rows: 200px 200px 200px 200px 200px 287px;
+            grid-auto-rows: 1fr;
+            gap: 8px 8px;
+            grid-auto-flow: row dense;
+            grid-template-areas:
+                "grid-one grid-one"
+                "grid-one grid-one"
+                "grid-two grid-two"
+                "grid-two grid-two"
+                "grid-three grid-three"
+                "grid-three grid-three";
+            width: 100%;
+            height: 100%;
+        }
+
+        &__grid-one {
+            display: grid;
+            grid-template-columns: 525px 427px;
+            grid-template-rows: 200px 200px;
+            gap: 8px 8px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "fd app"
+                "qual app";
+            grid-area: grid-one;
+        }
+
+        &__fd {
+            grid-area: fd;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-top: 20px;
+                padding-left: 15px;
+            }
+        }
+
+        &__app {
+            grid-area: app;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-left: 18px;
+                padding-top: 27px;
+            }
+            &--par {
+                @include par;
+                padding-left: 18px;
+                padding-top: 20px;
+            }
+        }
+
+        &__qual {
+            grid-area: qual;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-left: 15px;
+                padding-top: 20px;
+            }
+        }
+
+        &__grid-two {
+            display: grid;
+            grid-template-columns: 525fr 427fr;
+            grid-template-rows: 200px 200px;
+            gap: 8px 8px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "constr repair"
+                "equip repair";
+            grid-area: grid-two;
+        }
+
+        &__constr {
+            grid-area: constr;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-left: 15px;
+                padding-top: 20px;
+            }
+        }
+
+        &__repair {
+            grid-area: repair;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-left: 15px;
+                padding-top: 20px;
+            }
+        }
+
+        &__equip {
+            grid-area: equip;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-left: 15px;
+                padding-top: 20px;
+            }
+        }
+
+        &__grid-three {
+            display: grid;
+            grid-template-columns: 525px 427px;
+            grid-template-rows: 200px 287px;
+            gap: 8px 8px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "adj adj"
+                "consult sale";
+            grid-area: grid-three;
+        }
+
+        &__adj {
+            grid-area: adj;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 50px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-left: 15px;
+                padding-top: 20px;
+            }
+        }
+
+        &__consult {
+            grid-area: consult;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-top: 20px;
+                padding-left: 15px;
+            }
+        }
+
+        &__sale {
+            grid-area: sale;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-top: 20px;
+                padding-left: 15px;
+            }
         }
     }
 }

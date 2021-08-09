@@ -17,7 +17,8 @@
     }
     &__desc {
         position: absolute;
-        top: 200px;
+        left: 47px;
+        top: 139px;
         width: 492px;
         z-index: 10;
         &--header {
@@ -32,6 +33,44 @@
         }
         &--btn {
             @include btn;
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .first-page {
+        background: #000000;
+        &__cover {
+            height: 800px;
+            width: 935px;
+            position: relative;
+            margin: 0 auto;
+            &--picture {
+                position: absolute;
+                width: 633px;
+                height: 448px;
+                left: 340px;
+                top: 235px;
+            }
+        }
+        &__desc {
+            position: absolute;
+            top: 100px;
+            width: 492px;
+            z-index: 10;
+            &--header {
+                @include header-h2;
+                color: #ffffff;
+                text-align: unset;
+                padding-bottom: 40px;
+            }
+            &--par {
+                @include par;
+                width: 450px;
+                padding-bottom: 50px;
+            }
+            &--btn {
+                @include btn;
+            }
         }
     }
 }

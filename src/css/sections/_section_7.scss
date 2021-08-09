@@ -46,3 +46,53 @@
         }
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .map {
+        &__cover {
+            width: 935px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            background: #f5f5f5;
+            &--img {
+                position: absolute;
+                width: 100%;
+                top: 100%;
+                left: 0;
+            }
+        }
+        &__time {
+            padding-left: 10px;
+            &--header {
+                @include header-h3;
+                color: #000000;
+                padding: 40px 0 24px 150px;
+            }
+        }
+        &__weekdays {
+            padding-bottom: 13px;
+            padding-left: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__weekends {
+            padding-bottom: 34px;
+            padding-left: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__location {
+            padding-right: 10px;
+            &--header {
+                @include header-h3;
+                color: #000000;
+                padding-top: 40px;
+                padding-bottom: 25px;
+            }
+            &--par {
+                padding-bottom: 15px;
+            }
+        }
+    }
+}

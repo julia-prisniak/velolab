@@ -101,3 +101,108 @@
         }
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .prices {
+        &__cover {
+            width: 935px;
+            margin: 0 auto;
+            padding-bottom: 125px;
+        }
+        &__header {
+            @include header-h2;
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+        &__table {
+            width: 935px;
+            margin: 0 auto;
+            display: table;
+            &--name {
+                width: 935px;
+                padding-top: 8px;
+                padding-bottom: 5px;
+                text-align: center;
+                background: $normal-color;
+                font-family: Raleway;
+                font-size: 18px;
+                line-height: 36px;
+                color: #ffffff;
+            }
+            &--tr-top {
+                font-family: Raleway;
+                font-size: 24px;
+                line-height: 36px;
+                & td {
+                    padding-bottom: 18px;
+                }
+                & td:nth-child(1) {
+                    width: 365px;
+                }
+                & td:nth-child(2) {
+                    width: 615px;
+                }
+                & td:nth-child(3) {
+                    width: 165px;
+                }
+            }
+            &--tr {
+                & td {
+                    font-family: Lato, Helvetica, Arial, sans-serif;
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding-top: 12px;
+                    padding-bottom: 14px;
+                    vertical-align: text-top;
+                    border-bottom: 1px solid #e6e6e6;
+                }
+                & td:nth-child(1) {
+                    width: 365px;
+                }
+                & td:nth-child(2) {
+                    width: 415px;
+                    padding-right: 125px;
+                }
+                & td:nth-child(3) {
+                    width: 165px;
+                }
+            }
+        }
+        &__btn {
+            display: block;
+            width: 325px;
+            height: 60px;
+            background: $normal-color;
+            border-radius: 30px;
+            text-align: center;
+            margin: 0 auto;
+            &--name {
+                background: none;
+                color: #ffffff;
+                display: flex;
+                margin: 0 auto;
+                padding-top: 5px;
+                font-family: Raleway;
+                font-size: 18px;
+                line-height: 50px;
+                font-weight: 600;
+            }
+        }
+        &__download {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            &--img {
+                position: absolute;
+                top: 10%;
+            }
+            &--par {
+                padding-left: 35px;
+                color: #000000;
+                font-family: Raleway;
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+    }
+}

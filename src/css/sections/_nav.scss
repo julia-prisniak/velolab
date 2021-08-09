@@ -5,6 +5,14 @@
         width: 1140px;
         display: flex;
         padding-top: 15px;
+        &--logo {
+            position: absolute;
+            left: 47px;
+            top: 31px;
+        }
+    }
+    &__burger-menu {
+        display: none;
     }
 
     &__menu {
@@ -21,6 +29,28 @@
             font-family: Raleway;
             font-size: 18px;
             line-height: 21px;
+        }
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navigation {
+        background: #000000;
+        &__cover {
+            position: relative;
+            margin: 0 auto;
+            width: 935px;
+            display: flex;
+            padding-top: 15px;
+        }
+        &__burger-menu {
+            position: absolute;
+            left: 850px;
+            top: 33px;
+            display: block;
+        }
+
+        &__menu {
+            display: none;
         }
     }
 }

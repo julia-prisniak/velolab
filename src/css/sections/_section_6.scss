@@ -229,3 +229,258 @@
         }
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .qa {
+        &__cover {
+            width: 935px;
+            margin: 0 auto;
+            padding-bottom: 40px;
+        }
+        &__header {
+            @include header-h2;
+            padding-bottom: 40px;
+        }
+        &__grid {
+            display: grid;
+            grid-template-columns: 465px 465px;
+            grid-template-rows: 194px 194px 256px;
+            grid-auto-rows: 1fr;
+            gap: 30px 30px;
+            grid-auto-flow: row dense;
+            grid-template-areas:
+                "question-one question-two"
+                "question-three question-four"
+                "question-five question-six";
+        }
+
+        &__question-one {
+            grid-area: question-one;
+            @include question;
+            &--img {
+                @include q-img;
+                width: 465px;
+            }
+            &--header {
+                @include q-h;
+                font-style: normal;
+                font-weight: normal;
+                padding: 15px 20px;
+            }
+            &--par {
+                @include q-p;
+            }
+        }
+
+        &__question-two {
+            grid-area: question-two;
+            @include question;
+            &--img {
+                @include q-img;
+                width: 465px;
+            }
+            &--header {
+                @include q-h;
+                font-style: normal;
+                font-weight: normal;
+                padding: 15px 20px;
+            }
+            &--par {
+                @include q-p;
+            }
+        }
+
+        &__question-three {
+            grid-area: question-three;
+            @include question;
+            &--img {
+                @include q-img;
+                width: 465px;
+            }
+            &--header {
+                @include q-h;
+                font-style: normal;
+                font-weight: normal;
+                padding: 15px 20px;
+            }
+            &--par {
+                @include q-p;
+            }
+        }
+
+        &__question-four {
+            grid-area: question-four;
+            @include question;
+            &--img {
+                @include q-img;
+                width: 465px;
+            }
+            &--header {
+                @include q-h;
+                font-style: normal;
+                font-weight: normal;
+                padding: 15px 15px;
+            }
+            &--par {
+                @include q-p;
+            }
+        }
+
+        &__question-five {
+            grid-area: question-five;
+            @include question;
+            &--img {
+                @include q-img;
+                width: 465px;
+            }
+            &--header {
+                @include q-h;
+                font-style: normal;
+                font-weight: normal;
+                padding: 15px 15px;
+            }
+            &--par {
+                @include q-p;
+            }
+        }
+
+        &__question-six {
+            grid-area: question-six;
+            @include question;
+            &--img {
+                @include q-img;
+                width: 466px;
+            }
+            &--header {
+                @include q-h;
+                margin: 0 auto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 36px;
+            }
+            &--par {
+                @include q-p;
+            }
+            padding-top: 1px;
+        }
+        &__contact-us {
+            &--header {
+                @include header-h2;
+                padding-top: 55px;
+            }
+        }
+        &__shell {
+            display: flex;
+            margin: 0 auto;
+            padding-bottom: 35px;
+        }
+        &__phone {
+            padding-top: 35px;
+            padding-left: 50px;
+        }
+        &__one {
+            position: relative;
+            padding-bottom: 18px;
+            &--img {
+                position: absolute;
+                top: 5%;
+                left: 0;
+            }
+            &--par {
+                padding-left: 25px;
+            }
+        }
+        &__two {
+            position: relative;
+            padding-bottom: 18px;
+            &--img {
+                position: absolute;
+                top: 5%;
+                left: 0;
+            }
+            &--par {
+                padding-left: 25px;
+            }
+        }
+        &__tree {
+            position: relative;
+            padding-bottom: 18px;
+            &--img {
+                position: absolute;
+                top: 5%;
+                left: 0;
+            }
+            &--par {
+                padding-left: 25px;
+            }
+        }
+        &__social {
+            padding-top: 35px;
+            padding-left: 90px;
+        }
+        &__viber {
+            position: relative;
+            padding-bottom: 18px;
+            &--img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            &--par {
+                padding-left: 35px;
+            }
+        }
+        &__facebook {
+            position: relative;
+            padding-bottom: 18px;
+            &--img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            &--par {
+                padding-left: 35px;
+            }
+        }
+        &__instagram {
+            position: relative;
+            padding-bottom: 18px;
+            &--img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            &--par {
+                padding-left: 35px;
+            }
+        }
+        &__adress {
+            padding-top: 35px;
+            padding-left: 90px;
+        }
+        &__mail {
+            position: relative;
+            padding-bottom: 18px;
+            &--img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            &--par {
+                padding-left: 35px;
+            }
+        }
+        &__pin {
+            position: relative;
+            padding-bottom: 18px;
+            &--img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            &--par {
+                padding-left: 35px;
+            }
+        }
+    }
+}

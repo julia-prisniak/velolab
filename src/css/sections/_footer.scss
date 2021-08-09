@@ -151,3 +151,156 @@
         }
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer {
+        &__cover {
+            width: 935px;
+            margin: 0 auto;
+        }
+        &__top {
+            position: relative;
+            top: 260px;
+            display: flex;
+            justify-content: space-between;
+            background: #000000;
+            border-bottom: 1px solid white;
+        }
+        &__bottom {
+            position: relative;
+            top: 260px;
+            display: flex;
+            background: #000000;
+            &--par {
+                @include f-par;
+                margin: 0 auto;
+                padding-bottom: 13px;
+                padding-top: 18px;
+            }
+        }
+        &__menu {
+            padding: 30px 0px 45px 25px;
+            &--header {
+                color: #ffffff;
+                font-family: Raleway;
+                font-size: 18px;
+                line-height: 36px;
+            }
+            &--par {
+                @include f-par;
+            }
+        }
+        &__phones {
+            padding-top: 30px;
+            padding-left: 35px;
+            position: relative;
+            &--header {
+                font-family: Raleway;
+                font-size: 18px;
+                line-height: 36px;
+                color: #ffffff;
+                padding-bottom: 15px;
+            }
+        }
+        &__phone-one {
+            padding-bottom: 6px;
+            &--img {
+                position: absolute;
+                top: 31%;
+                left: 27px;
+            }
+            &--par {
+                @include f-par;
+                padding-left: 25px;
+            }
+        }
+        &__phone-two {
+            padding-bottom: 6px;
+            &--img {
+                position: absolute;
+                top: 43%;
+                left: 27px;
+            }
+            &--par {
+                @include f-par;
+                padding-left: 25px;
+            }
+        }
+        &__phone-three {
+            padding-bottom: 6px;
+            &--img {
+                position: absolute;
+                top: 55%;
+                left: 27px;
+            }
+            &--par {
+                @include f-par;
+                padding-left: 25px;
+            }
+        }
+        &__social {
+            padding: 80px 35px 0 35px;
+        }
+        &__viber {
+            position: relative;
+            padding-bottom: 6px;
+            &--img {
+                position: absolute;
+            }
+            &--par {
+                @include f-par;
+                padding-left: 35px;
+            }
+        }
+        &__facebook {
+            position: relative;
+            padding-bottom: 6px;
+            &--img {
+                position: absolute;
+            }
+            &--par {
+                @include f-par;
+                padding-left: 35px;
+            }
+        }
+        &__instagram {
+            position: relative;
+            padding-bottom: 6px;
+            &--img {
+                position: absolute;
+            }
+            &--par {
+                @include f-par;
+                padding-left: 35px;
+            }
+        }
+        &__adress {
+            padding-top: 80px;
+            padding-right: 47px;
+        }
+        &__mail {
+            position: relative;
+            padding-bottom: 6px;
+            &--img {
+                position: absolute;
+                top: 20%;
+                left: 0;
+            }
+            &--par {
+                @include f-par;
+                padding-left: 25px;
+            }
+        }
+        &__pin {
+            position: relative;
+            &--img {
+                position: absolute;
+                top: 20%;
+                left: 0;
+            }
+            &--par {
+                @include f-par;
+                padding-left: 25px;
+            }
+        }
+    }
+}
