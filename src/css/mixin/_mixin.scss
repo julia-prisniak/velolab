@@ -1,13 +1,13 @@
 @import "../var/var";
 @mixin btn {
     display: block;
-    width: 325px;
-    height: 60px;
     background: $normal-color;
     border-radius: 30px;
     font-family: Raleway;
+    box-sizing: border-box;
+    padding: 15px 0 15px 0;
+    line-height: 28px;
     font-size: 18px;
-    line-height: 50px;
     font-weight: 600;
     color: #ffffff;
     text-decoration: none;
@@ -28,6 +28,8 @@
 }
 @mixin par {
     font-family: Lato, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;

@@ -6,9 +6,7 @@
         display: flex;
         padding-top: 15px;
         &--logo {
-            position: absolute;
-            left: 47px;
-            top: 31px;
+            padding-top: 11px;
         }
     }
     &__burger-menu {
@@ -38,13 +36,66 @@
         &__cover {
             position: relative;
             margin: 0 auto;
-            width: 935px;
+            width: calc(100% - 94px);
             display: flex;
             padding-top: 15px;
+            &--logo {
+                padding-top: 11px;
+            }
         }
         &__burger-menu {
             position: absolute;
             left: 850px;
+            top: 33px;
+            display: block;
+        }
+
+        &__menu {
+            display: none;
+        }
+    }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+    .navigation {
+        background: #000000;
+        &__cover {
+            position: relative;
+            margin: 0 auto;
+            width: calc(100% - 78px);
+            display: flex;
+            padding-top: 15px;
+            &--logo {
+                padding-top: 11px;
+            }
+        }
+        &__burger-menu {
+            position: absolute;
+            left: 650px;
+            top: 33px;
+            display: block;
+        }
+
+        &__menu {
+            display: none;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .navigation {
+        background: #000000;
+        &__cover {
+            position: relative;
+            margin: 0 auto;
+            width: calc(100% - 78px);
+            display: flex;
+            padding-top: 15px;
+            &--logo {
+                padding-top: 11px;
+            }
+        }
+        &__burger-menu {
+            position: absolute;
+            left: 225px;
             top: 33px;
             display: block;
         }

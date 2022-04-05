@@ -20,21 +20,3 @@
 body {
     font-family: sans-serif;
 }
-@media (min-width: 663px) and (max-width: 1024px) {
-    .navigation {
-        background: #000000;
-        &__cover {
-            margin: 0 auto;
-            width: 930px;
-            display: flex;
-            padding-top: 15px;
-        }
-        &__burger-menu {
-            display: block;
-        }
-
-        &__menu {
-            display: none;
-        }
-    }
-}

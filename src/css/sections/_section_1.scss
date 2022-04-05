@@ -30,9 +30,12 @@
         &--par {
             @include par;
             padding-bottom: 50px;
+            font-size: 18px;
+            line-height: 28px;
         }
         &--btn {
             @include btn;
+            margin-right: 150px;
         }
     }
 }
@@ -41,7 +44,7 @@
         background: #000000;
         &__cover {
             height: 800px;
-            width: 935px;
+            width: calc(100% - 94px);
             position: relative;
             margin: 0 auto;
             &--picture {
@@ -70,6 +73,94 @@
             }
             &--btn {
                 @include btn;
+                margin-right: 150px;
+            }
+        }
+    }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+    .first-page {
+        background: #000000;
+        &__cover {
+            height: 900px;
+            width: calc(100% - 78px);
+            position: relative;
+            margin: 0 auto;
+            &--picture {
+                position: absolute;
+                width: 633px;
+                height: 448px;
+                left: 68px;
+                top: 397px;
+            }
+        }
+        &__desc {
+            position: absolute;
+            top: 100px;
+            width: 492px;
+            z-index: 10;
+            &--header {
+                @include header-h2;
+                color: #ffffff;
+                text-align: unset;
+                padding-bottom: 40px;
+            }
+            &--par {
+                @include par;
+                width: 450px;
+                padding-bottom: 50px;
+            }
+            &--btn {
+                @include btn;
+                margin-right: 150px;
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .first-page {
+        background: #000000;
+        &__cover {
+            height: 690px;
+            width: calc(100% - 30px);
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+            &--picture {
+                position: absolute;
+                width: 529px;
+                height: 372px;
+                left: -9px;
+                top: 319px;
+            }
+        }
+        &__desc {
+            position: absolute;
+            top: 100px;
+            width: 492px;
+            z-index: 10;
+            &--header {
+                @include header-h2;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 36px;
+                color: #ffffff;
+                text-align: unset;
+                padding-bottom: 20px;
+            }
+            &--par {
+                @include par;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 22px;
+                width: 290px;
+                padding-bottom: 25px;
+            }
+            &--btn {
+                @include btn;
+                margin-right: 150px;
             }
         }
     }

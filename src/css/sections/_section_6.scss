@@ -200,7 +200,7 @@
             padding-left: 35px;
         }
     }
-    &__adress {
+    &__address {
         padding-top: 35px;
         padding-left: 130px;
     }
@@ -232,7 +232,7 @@
 @media (min-width: 769px) and (max-width: 1024px) {
     .qa {
         &__cover {
-            width: 935px;
+            width: calc(100% - 64px);
             margin: 0 auto;
             padding-bottom: 40px;
         }
@@ -454,7 +454,7 @@
                 padding-left: 35px;
             }
         }
-        &__adress {
+        &__address {
             padding-top: 35px;
             padding-left: 90px;
         }
@@ -483,4 +483,8 @@
             }
         }
     }
+}
+@media (min-width: 768px) and (max-width: 321px) {
+}
+@media (max-width: 320px) {
 }

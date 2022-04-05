@@ -222,7 +222,7 @@
 @media (min-width: 769px) and (max-width: 1024px) {
     .our-services {
         &__cover {
-            width: 935px;
+            width: calc(100% - 64px);
             margin: 0 auto;
             &--header {
                 @include header-h2;
@@ -441,6 +441,478 @@
             &--par {
                 @include par;
                 padding-top: 20px;
+                padding-left: 15px;
+            }
+        }
+    }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+    .our-services {
+        &__cover {
+            width: calc(100% - 64px);
+            margin: 0 auto;
+            &--header {
+                @include header-h2;
+                padding: 55px 0 55px 0;
+            }
+        }
+        &__grid {
+            display: grid;
+            grid-template-columns: 525px 427px;
+            grid-template-rows: 200px 200px 200px 200px 200px 287px;
+            grid-auto-rows: 1fr;
+            gap: 8px 8px;
+            grid-auto-flow: row dense;
+            grid-template-areas:
+                "grid-one grid-one"
+                "grid-one grid-one"
+                "grid-two grid-two"
+                "grid-two grid-two"
+                "grid-three grid-three"
+                "grid-three grid-three";
+            width: 100%;
+            height: 100%;
+        }
+
+        &__grid-one {
+            display: grid;
+            grid-template-columns: 525px 427px;
+            grid-template-rows: 200px 200px;
+            gap: 8px 8px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "fd app"
+                "qual app";
+            grid-area: grid-one;
+        }
+
+        &__fd {
+            grid-area: fd;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-top: 20px;
+                padding-left: 15px;
+            }
+        }
+
+        &__app {
+            grid-area: app;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-left: 18px;
+                padding-top: 27px;
+            }
+            &--par {
+                @include par;
+                padding-left: 18px;
+                padding-top: 20px;
+            }
+        }
+
+        &__qual {
+            grid-area: qual;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-left: 15px;
+                padding-top: 20px;
+            }
+        }
+
+        &__grid-two {
+            display: grid;
+            grid-template-columns: 525fr 427fr;
+            grid-template-rows: 200px 200px;
+            gap: 8px 8px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "constr repair"
+                "equip repair";
+            grid-area: grid-two;
+        }
+
+        &__constr {
+            grid-area: constr;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-left: 15px;
+                padding-top: 20px;
+            }
+        }
+
+        &__repair {
+            grid-area: repair;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-left: 15px;
+                padding-top: 20px;
+            }
+        }
+
+        &__equip {
+            grid-area: equip;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-left: 15px;
+                padding-top: 20px;
+            }
+        }
+
+        &__grid-three {
+            display: grid;
+            grid-template-columns: 525px 427px;
+            grid-template-rows: 200px 287px;
+            gap: 8px 8px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "adj adj"
+                "consult sale";
+            grid-area: grid-three;
+        }
+
+        &__adj {
+            grid-area: adj;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 50px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-left: 15px;
+                padding-top: 20px;
+            }
+        }
+
+        &__consult {
+            grid-area: consult;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-top: 20px;
+                padding-left: 15px;
+            }
+        }
+
+        &__sale {
+            grid-area: sale;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                padding-top: 27px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                padding-top: 20px;
+                padding-left: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    .our-services {
+        &__cover {
+            width: calc(100% - 64px);
+            margin: 0 auto;
+            &--header {
+                @include header-h2;
+                padding: 55px 0 55px 0;
+            }
+        }
+        &__grid {
+            display: grid;
+            grid-template-columns: 320px;
+            grid-template-rows: 450px 500px 500px;
+            grid-auto-rows: 1fr;
+            gap: 0px 8px;
+            grid-auto-flow: row dense;
+            grid-template-areas:
+                "grid-one"
+                "grid-two"
+                "grid-tree";
+            width: 100%;
+            height: 100%;
+        }
+
+        &__grid-one {
+            display: grid;
+            grid-template-columns: 320px;
+            grid-template-rows: 130px 150px 170px;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "fd"
+                "app"
+                "qual";
+            grid-area: grid-one;
+        }
+
+        &__fd {
+            grid-area: fd;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                font-size: 18px;
+                padding-top: 13px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                font-size: 14px;
+                padding-top: 8px;
+                padding-left: 15px;
+            }
+        }
+
+        &__app {
+            grid-area: app;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                font-size: 18px;
+                padding-left: 15px;
+                padding-top: 13px;
+            }
+            &--par {
+                @include par;
+                font-size: 14px;
+                padding-left: 15px;
+                padding-top: 8px;
+            }
+        }
+
+        &__qual {
+            grid-area: qual;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                font-size: 18px;
+                padding-top: 13px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                font-size: 14px;
+                padding-left: 15px;
+                padding-top: 8px;
+            }
+        }
+
+        &__grid-two {
+            display: grid;
+            grid-template-columns: 320px;
+            grid-template-rows: 130px 150px 220px;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "constr"
+                "repair"
+                "equip";
+            grid-area: grid-two;
+        }
+
+        &__constr {
+            grid-area: constr;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                font-size: 18px;
+                padding-top: 13px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                font-size: 14px;
+                padding-left: 15px;
+                padding-top: 8px;
+            }
+        }
+
+        &__repair {
+            grid-area: repair;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                font-size: 18px;
+                padding-top: 13px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                font-size: 14px;
+                padding-left: 15px;
+                padding-top: 8px;
+            }
+        }
+
+        &__equip {
+            grid-area: equip;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                font-size: 18px;
+                padding-top: 13px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                font-size: 14px;
+                padding-left: 15px;
+                padding-top: 8px;
+            }
+        }
+
+        &__grid-three {
+            display: grid;
+            grid-template-columns: 320px;
+            grid-template-rows: 200px 170px 130px;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "adj"
+                "consult"
+                "sale";
+            grid-area: grid-tree;
+        }
+
+        &__adj {
+            grid-area: adj;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                font-size: 18px;
+                padding-top: 13px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                font-size: 14px;
+                padding-left: 15px;
+                padding-top: 8px;
+            }
+        }
+
+        &__consult {
+            grid-area: consult;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                font-size: 18px;
+                padding-top: 13px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                font-size: 14px;
+                padding-top: 8px;
+                padding-left: 15px;
+            }
+        }
+
+        &__sale {
+            grid-area: sale;
+            position: relative;
+            &--img {
+                @include img-cover;
+            }
+            &--header {
+                @include header-h3;
+                font-size: 18px;
+                padding-top: 13px;
+                padding-left: 15px;
+            }
+            &--par {
+                @include par;
+                font-size: 14px;
+                padding-top: 8px;
                 padding-left: 15px;
             }
         }
